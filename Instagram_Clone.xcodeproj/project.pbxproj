@@ -51,6 +51,11 @@
 		C7FF2C73292418120020FF11 /* Instagram_Clone */ = {
 			isa = PBXGroup;
 			children = (
+				C7FF2C86292418B30020FF11 /* API */,
+				C7FF2C85292418A60020FF11 /* Utils */,
+				C7FF2C842924188B0020FF11 /* Model */,
+				C7FF2C83292418780020FF11 /* ViewModel */,
+				C7FF2C82292418670020FF11 /* View */,
 				C7FF2C74292418120020FF11 /* Instagram_CloneApp.swift */,
 				C7FF2C76292418120020FF11 /* ContentView.swift */,
 				C7FF2C78292418190020FF11 /* Assets.xcassets */,
@@ -65,6 +70,41 @@
 				C7FF2C7B292418190020FF11 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C7FF2C82292418670020FF11 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C7FF2C83292418780020FF11 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C7FF2C842924188B0020FF11 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C7FF2C85292418A60020FF11 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C7FF2C86292418B30020FF11 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
