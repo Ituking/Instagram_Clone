@@ -36,7 +36,7 @@ struct FeedCell: View {
                     .foregroundColor(.black)
                     .frame(width: 20, height: 20)
                     .font(.system(size: 20))
-                    .padding()
+                    .padding(4)
                 
                 Image(systemName: "bubble.right")
                     .resizable()
@@ -44,7 +44,7 @@ struct FeedCell: View {
                     .foregroundColor(.black)
                     .frame(width: 20, height: 20)
                     .font(.system(size: 20))
-                    .padding()
+                    .padding(4)
                 
                 Image(systemName: "paperplane")
                     .resizable()
@@ -52,8 +52,30 @@ struct FeedCell: View {
                     .foregroundColor(.black)
                     .frame(width: 20, height: 20)
                     .font(.system(size: 20))
-                    .padding()
+                    .padding(4)
             }
+            .padding(.leading, 4)
+            .foregroundColor(.black)
+            
+            Text("3,406,515 likes")
+                .font(.system(size: 14, weight: .semibold))
+                .padding(.leading, 8)
+                .padding(.bottom, 0.5)
+            
+            HStack {
+                Text("tedmosby")
+                    .font(.system(size: 14, weight: .semibold))
+                
+                Text("I look great!!")
+                    .font(.system(size: 14))
+            }
+            .padding(.horizontal, 8)
+            
+            Text("3 days ago")
+                .font(.system(size: 14))
+                .foregroundColor(.gray)
+                .padding(.leading, 8)
+                .padding(.top, -2)
         }
     }
 }
