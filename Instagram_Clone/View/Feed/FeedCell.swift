@@ -29,7 +29,7 @@ struct FeedCell: View {
                 .frame(maxHeight: 440)
                 .clipped()
             
-            HStack {
+            HStack(spacing: 16) {
                 Image(systemName: "heart")
                     .resizable()
                     .scaledToFill()
@@ -38,7 +38,7 @@ struct FeedCell: View {
                     .font(.system(size: 20))
                     .padding()
                 
-                Image(systemName: "heart")
+                Image(systemName: "bubble.right")
                     .resizable()
                     .scaledToFill()
                     .foregroundColor(.black)
@@ -46,7 +46,7 @@ struct FeedCell: View {
                     .font(.system(size: 20))
                     .padding()
                 
-                Image(systemName: "heart")
+                Image(systemName: "paperplane")
                     .resizable()
                     .scaledToFill()
                     .foregroundColor(.black)
