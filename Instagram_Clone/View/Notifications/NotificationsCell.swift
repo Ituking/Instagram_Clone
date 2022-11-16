@@ -34,7 +34,7 @@ struct NotificationsCell: View {
                 .foregroundColor(.white)
                 .background(Color.blue)
                 .cornerRadius(3)
-                .opacity (
+                .overlay (
                     RoundedRectangle(cornerRadius: 3)
                         .stroke(Color.gray, lineWidth: 1)
                 )
