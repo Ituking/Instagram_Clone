@@ -44,6 +44,7 @@ struct UploadPostView: View {
                     
                     TextField("Enter your caption... ", text: $captionText)
                 }
+                .padding()
                 
                 Button {
                     
