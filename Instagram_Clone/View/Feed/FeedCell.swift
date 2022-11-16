@@ -9,7 +9,20 @@ import SwiftUI
 
 struct FeedCell: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading) {
+            HStack {
+                Image("ted")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 36, height: 36)
+                    .clipped()
+                .cornerRadius(18)
+                
+                Text("tedmosby")
+                    .font(.system(size: 14, weight: .semibold))
+            }
+            .padding([.leading, .bottom], 8)
+        }
     }
 }
 
