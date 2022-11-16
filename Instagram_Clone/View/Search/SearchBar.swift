@@ -30,6 +30,7 @@ struct SearchBar: View {
             Button(action: {
                 isEditing = false
                 text = ""
+                UIApplication.shared.endEditing()
             }, label: {
                 Text("Cancel")
                     .foregroundColor(.black)
