@@ -22,6 +22,16 @@ struct FeedCell: View {
                     .font(.system(size: 14, weight: .semibold))
             }
             .padding([.leading, .bottom], 8)
+            
+            Image("ted")
+                .resizable()
+                .scaledToFill()
+                .frame(maxHeight: 440)
+                .clipped()
+            
+            HStack {
+                
+            }
         }
     }
 }
