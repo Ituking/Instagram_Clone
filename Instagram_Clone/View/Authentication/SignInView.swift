@@ -36,11 +36,15 @@ struct SignInView: View {
                     
                     Spacer()
                     
-                    Text("Forgot Password")
-                        .font(.system(size: 13, weight: .semibold))
-                        .foregroundColor(.gray)
-                        .padding(.top)
-                        .padding(.trailing, 28)
+                    NavigationLink(destination: {
+                        ForgotPasswordView()
+                    }, label: {
+                        Text("Forgot Password")
+                            .font(.system(size: 13, weight: .semibold))
+                            .foregroundColor(.gray)
+                            .padding(.top)
+                            .padding(.trailing, 28)
+                    })
                 }
                 
                 Button(action: {
