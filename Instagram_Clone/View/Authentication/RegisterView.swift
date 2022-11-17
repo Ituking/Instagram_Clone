@@ -29,6 +29,17 @@ struct RegisterView: View {
                 CustomSecureField(text: $password, placeholder: Text("Password"), imageName: "envelope")
                     .padding()
                     .padding(.horizontal, 32)
+                
+                HStack {
+                    
+                    Spacer()
+                    
+                    Text("Forgot Password")
+                        .font(.system(size: 13, weight: .semibold))
+                        .foregroundColor(.gray)
+                        .padding(.top)
+                        .padding(.trailing, 28)
+                }
             }
             
             Button(action: {
@@ -44,6 +55,14 @@ struct RegisterView: View {
             })
             
             Spacer()
+            
+            HStack {
+                Text("Don't have an account?")
+                    .font(.system(size: 14, weight: .semibold))
+                
+                Text("Sign In")
+                    .font(.system(size: 14))
+            }
             
         }
     }
