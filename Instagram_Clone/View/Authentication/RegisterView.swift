@@ -57,7 +57,7 @@ struct RegisterView: View {
                 Spacer()
                 
                 NavigationLink(
-                    destination: SignInView(),
+                    destination: SignInView().navigationBarHidden(true),
                     label: {
                         HStack {
                             Text("Already have an account?")
