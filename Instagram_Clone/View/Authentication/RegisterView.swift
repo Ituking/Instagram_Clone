@@ -21,13 +21,30 @@ struct RegisterView: View {
                 .frame(width: 220, height: 220)
                 .foregroundColor(.black)
             
-            CustomTextField(text: $email, placeholder: Text("Email"), imageName: "envelope")
-                .padding()
+            VStack(spacing: -16) {
+                CustomTextField(text: $email, placeholder: Text("Email"), imageName: "envelope")
+                    .padding()
                 .padding(.horizontal, 32)
+                
+                CustomSecureField(text: $password, placeholder: Text("Password"), imageName: "envelope")
+                    .padding()
+                    .padding(.horizontal, 32)
+            }
             
-            CustomSecureField(text: $password, placeholder: Text("Password"), imageName: "envelope")
-                .padding()
-                .padding(.horizontal, 32)
+            Button(action: {
+                
+            }, label: {
+                Text("Register")
+                    .font(.headline)
+                    .foregroundColor(.white)
+                    .frame(width: 360, height: 50)
+                    .background(Color.blue)
+                    .clipShape(Capsule())
+                    .padding()
+            })
+            
+            Spacer()
+            
         }
     }
 }
