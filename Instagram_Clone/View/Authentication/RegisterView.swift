@@ -23,8 +23,6 @@ struct RegisterView: View {
             
             CustomTextField(text: $email, placeholder: Text("Email"), imageName: "envelope")
                 .padding()
-                .cornerRadius(10)
-                .foregroundColor(.gray)
                 .padding(.horizontal, 32)
             
             CustomSecureField(text: $password, placeholder: Text("Email"), imageName: "envelope")

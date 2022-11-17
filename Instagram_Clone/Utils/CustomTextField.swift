@@ -30,6 +30,18 @@ struct CustomTextField: View {
                 
                 TextField("", text: $text)
             }
+            .padding(.leading)
         }
+        .frame(width: 360, height: 50)
+        .background(
+            ZStack {
+                Color(.init(white: 0.9, alpha: 0.7))
+                    .cornerRadius(8)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 8)
+                            .stroke(Color(.init(white: 0.7, alpha: 0.7)), lineWidth: 1)
+                    )
+            }
+        )
     }
 }
