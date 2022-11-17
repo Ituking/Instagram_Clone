@@ -60,7 +60,7 @@ struct RegisterView: View {
                     destination: SignInView(),
                     label: {
                         HStack {
-                            Text("Don't have an account?")
+                            Text("Already have an account?")
                                 .font(.system(size: 14, weight: .semibold))
                             
                             Text("Sign In")
