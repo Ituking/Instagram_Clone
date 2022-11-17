@@ -25,7 +25,7 @@ struct RegisterView: View {
                 .padding()
                 .padding(.horizontal, 32)
             
-            CustomSecureField(text: $password, placeholder: Text("Email"), imageName: "envelope")
+            CustomSecureField(text: $password, placeholder: Text("Password"), imageName: "envelope")
                 .padding()
                 .padding(.horizontal, 32)
         }
