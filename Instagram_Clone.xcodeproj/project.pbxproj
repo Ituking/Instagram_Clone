@@ -30,6 +30,7 @@
 		C7EEAF8A29266F91005E60EF /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EEAF8929266F91005E60EF /* CustomSecureField.swift */; };
 		C7EEAF8C2926866C005E60EF /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EEAF8B2926866C005E60EF /* ForgotPasswordView.swift */; };
 		C7EEAF8E2927A761005E60EF /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = C7EEAF8D2927A761005E60EF /* GoogleService-Info (1).plist */; };
+		C7EEAF952927DDFD005E60EF /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EEAF942927DDFD005E60EF /* AuthViewModel.swift */; };
 		C7FF2C75292418120020FF11 /* Instagram_CloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FF2C74292418120020FF11 /* Instagram_CloneApp.swift */; };
 		C7FF2C77292418120020FF11 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FF2C76292418120020FF11 /* ContentView.swift */; };
 		C7FF2C79292418190020FF11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7FF2C78292418190020FF11 /* Assets.xcassets */; };
@@ -65,6 +66,7 @@
 		C7EEAF8929266F91005E60EF /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
 		C7EEAF8B2926866C005E60EF /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		C7EEAF8D2927A761005E60EF /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		C7EEAF942927DDFD005E60EF /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		C7FF2C71292418120020FF11 /* Instagram_Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram_Clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7FF2C74292418120020FF11 /* Instagram_CloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instagram_CloneApp.swift; sourceTree = "<group>"; };
 		C7FF2C76292418120020FF11 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -163,6 +165,42 @@
 			path = Authentication;
 			sourceTree = "<group>";
 		};
+		C7EEAF8F2927DD11005E60EF /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				C7EEAF942927DDFD005E60EF /* AuthViewModel.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		C7EEAF902927DD3E005E60EF /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		C7EEAF912927DD62005E60EF /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		C7EEAF922927DD87005E60EF /* Upload */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Upload;
+			sourceTree = "<group>";
+		};
+		C7EEAF932927DDA4005E60EF /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		C7FF2C68292418120020FF11 = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +259,11 @@
 		C7FF2C83292418780020FF11 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				C7EEAF932927DDA4005E60EF /* Profile */,
+				C7EEAF922927DD87005E60EF /* Upload */,
+				C7EEAF912927DD62005E60EF /* Search */,
+				C7EEAF902927DD3E005E60EF /* Feed */,
+				C7EEAF8F2927DD11005E60EF /* Authentication */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -352,6 +395,7 @@
 				C7EEAF8629266982005E60EF /* SignInView.swift in Sources */,
 				C7EEAF7F29252A44005E60EF /* ProfileHeaderView.swift in Sources */,
 				C79B1A1A2924BBBB006C228F /* SearchBar.swift in Sources */,
+				C7EEAF952927DDFD005E60EF /* AuthViewModel.swift in Sources */,
 				C7EEAF8A29266F91005E60EF /* CustomSecureField.swift in Sources */,
 				C79B1A242924D43A006C228F /* ImagePicker.swift in Sources */,
 				C79B1A1529248B8F006C228F /* FeedCell.swift in Sources */,
