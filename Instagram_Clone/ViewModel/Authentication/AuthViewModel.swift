@@ -8,7 +8,9 @@
 import SwiftUI
 import Firebase
 
-struct AuthViewModel: ObservableObject {
+class AuthViewModel: ObservableObject {
+    
+    static let shared = AuthViewModel()
     
     func register(withEmail email: String, password: String) {
         Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
