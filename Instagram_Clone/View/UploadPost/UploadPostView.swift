@@ -12,13 +12,13 @@ struct UploadPostView: View {
     @State private var selectedImage: UIImage?
     @State var postImage: Image?
     @State var captionText = ""
-    @State var ImagePickerRepresented = false
+    @State var imagePickerRepresented = false
     
     var body: some View {
         
         if postImage == nil {
             Button(action: {
-                self.ImagePickerRepresented.toggle()
+                self.imagePickerRepresented.toggle()
             }, label: {
                 Image(systemName: "plus.circle")
                     .resizable()
@@ -28,7 +28,7 @@ struct UploadPostView: View {
                     .padding(.top)
                     .foregroundColor(.black)
             })
-            .sheet(isPresented: $ImagePickerRepresented) {
+            .sheet(isPresented: $imagePickerRepresented) {
                 loadImage()
             } content: {
                 ImagePicker(image: $selectedImage)
