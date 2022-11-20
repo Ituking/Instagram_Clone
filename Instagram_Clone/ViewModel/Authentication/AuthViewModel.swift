@@ -53,6 +53,8 @@ class AuthViewModel: ObservableObject {
                     return
                 }
                 
+                self.userSession = user
+                
                 print("DEBUG: USER CREATED")
             }
         }
@@ -61,5 +63,17 @@ class AuthViewModel: ObservableObject {
     func logout() {
         self.userSession = nil
         try? Auth.auth().signOut()
+    }
+    
+    func fetchUser() {
+        
+        guard let uid = userSession?.uid else { return }
+                
+        Firestore.firestore().collection("users").document(uid).getDocument { (snap, err) in
+            if let err = err {
+                print(err.localizedDescription)
+                return
+            }
+        }
     }
 }
