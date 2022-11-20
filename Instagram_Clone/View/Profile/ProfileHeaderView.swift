@@ -8,15 +8,40 @@
 import SwiftUI
 
 struct ProfileHeaderView: View {
+    
+    @State private var userImage: Image?
+    @State var imagePickerRepresented = false
+    @State var selectedImage: UIImage?
+    
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                Image("ted")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 80, height: 80)
-                    .clipShape(Circle())
-                .padding(.leading, 16)
+                ZStack {
+                    if let image = userImage {
+                        image
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 80, height: 80)
+                            .clipShape(Circle())
+                            .padding(.leading, 16)
+                    }
+                    else {
+                        Button(action: {
+                            self.imagePickerRepresented.toggle()
+                        }, label: {
+                            Image("ted")
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 80, height: 80)
+                                .clipShape(Circle())
+                                .padding(.leading, 16)
+                        })
+                        .sheet(isPresented: $imagePickerRepresented,
+                               content: {
+                            ImagePicker(image: $selectedImage)
+                        })
+                    }
+                }
                 
                 Spacer()
                 
@@ -26,6 +51,10 @@ struct ProfileHeaderView: View {
                     UserStats(value: 1363, title: "Following")
                 }
                 .padding(.trailing, 32)
+                
+                Text(AuthViewModel.shared.currentUser?.fullname ?? "")
+                    .font(.system(size: 15, weight: .bold))
+                    .padding([.leading, .top])
             }
         }
     }

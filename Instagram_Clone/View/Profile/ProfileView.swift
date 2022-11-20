@@ -15,6 +15,7 @@ struct ProfileView: View {
                     .padding()
                 
                 PostGridView()
+                    .padding(.horizontal)
             }
             .padding(.top)
         }
