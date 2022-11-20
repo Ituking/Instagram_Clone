@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C73F45C2292A55B000E37F4F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73F45C1292A55B000E37F4F /* User.swift */; };
 		C79B1A08292485BD006C228F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79B1A07292485BD006C228F /* ProfileView.swift */; };
 		C79B1A0A292485DD006C228F /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79B1A09292485DD006C228F /* NotificationsView.swift */; };
 		C79B1A0C29248697006C228F /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79B1A0B29248697006C228F /* SearchView.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C73F45C1292A55B000E37F4F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C79B1A07292485BD006C228F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		C79B1A09292485DD006C228F /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		C79B1A0B29248697006C228F /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
@@ -271,6 +273,7 @@
 		C7FF2C842924188B0020FF11 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C73F45C1292A55B000E37F4F /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C73F45C2292A55B000E37F4F /* User.swift in Sources */,
 				C79B1A0C29248697006C228F /* SearchView.swift in Sources */,
 				C7EEAF842926695A005E60EF /* RegisterView.swift in Sources */,
 				C79B1A10292486C0006C228F /* MainView.swift in Sources */,
