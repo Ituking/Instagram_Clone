@@ -36,7 +36,7 @@ struct ProfileHeaderView: View {
                                 .clipShape(Circle())
                                 .padding(.leading, 16)
                         }
-                        .sheet(isPresented: $imagePickerRepresented, content: {
+                        .sheet(isPresented: $imagePickerRepresented, onDismiss: loadImage, content: {
                             ImagePicker(image: $selectedImage)
                         })
                     }
