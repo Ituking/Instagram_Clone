@@ -10,7 +10,7 @@ import Kingfisher
 
 struct ProfileHeaderView: View {
     
-    @State private var userImage: Image?
+    @State private var userImage: Image? = Image("profile-placeholder")
     @State var selectedImage: UIImage?
     @State var imagePickerRepresented = false
     @ObservedObject var viewModel: ProfileViewModel
@@ -30,7 +30,7 @@ struct ProfileHeaderView: View {
                         Button {
                             self.imagePickerRepresented.toggle()
                         } label: {
-                            Image("profile-placeholder")
+                            userImage?
                                 .resizable()
                                 .scaledToFill()
                                 .frame(width: 80, height: 80)
@@ -64,6 +64,7 @@ struct ProfileHeaderView: View {
 extension ProfileHeaderView {
     func loadImage() {
         guard let selectedImage = selectedImage else { return }
+        userImage = Image(uiImage: selectedImage)
         viewModel.changeProfileImage(image: selectedImage) { (_) in
             print("DEBUG: Uploaded Image")
         }
