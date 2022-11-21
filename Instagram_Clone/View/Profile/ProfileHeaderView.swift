@@ -10,8 +10,8 @@ import SwiftUI
 struct ProfileHeaderView: View {
     
     @State private var userImage: Image?
-    @State var imagePickerRepresented = false
     @State var selectedImage: UIImage?
+    @State var imagePickerRepresented = false
     
     var body: some View {
         VStack(alignment: .leading) {
