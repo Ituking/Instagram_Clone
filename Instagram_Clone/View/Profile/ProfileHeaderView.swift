@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct ProfileHeaderView: View {
     
@@ -16,12 +17,30 @@ struct ProfileHeaderView: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                Image("ted")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 80, height: 80)
-                    .clipShape(Circle())
-                    .padding(.leading, 16)
+                ZStack {
+                    if let imageURL = AuthViewModel.shared.currentUser?.profileimageURL {
+                        KFImage(URL(string: imageURL))
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 80, height: 80)
+                            .clipShape(Circle())
+                            .padding(.leading, 16)
+                    } else {
+                        Button {
+                            
+                        } label: {
+                            Image("profile-placeholder")
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 80, height: 80)
+                                .clipShape(Circle())
+                                .padding(.leading, 16)
+                        }
+                        .sheet(isPresented: $imagePickerRepresented, content: {
+                            ImagePicker(image: $selectedImage)
+                        })
+                    }
+                }
                 
                 Spacer()
                 

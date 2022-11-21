@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C73F45C2292A55B000E37F4F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73F45C1292A55B000E37F4F /* User.swift */; };
+		C73F45C5292B279200E37F4F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C73F45C4292B279200E37F4F /* Kingfisher */; };
 		C79B1A08292485BD006C228F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79B1A07292485BD006C228F /* ProfileView.swift */; };
 		C79B1A0A292485DD006C228F /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79B1A09292485DD006C228F /* NotificationsView.swift */; };
 		C79B1A0C29248697006C228F /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79B1A0B29248697006C228F /* SearchView.swift */; };
@@ -81,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C73F45C5292B279200E37F4F /* Kingfisher in Frameworks */,
 				C7FF2C8B29241B260020FF11 /* FirebaseDatabase in Frameworks */,
 				C7FF2C8929241B260020FF11 /* FirebaseAuth in Frameworks */,
 				C7FF2C8D29241B260020FF11 /* FirebaseFirestore in Frameworks */,
@@ -92,6 +94,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C73F45C3292B279200E37F4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C79B1A02292484AF006C228F /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +217,7 @@
 			children = (
 				C7FF2C73292418120020FF11 /* Instagram_Clone */,
 				C7FF2C72292418120020FF11 /* Products */,
+				C73F45C3292B279200E37F4F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -318,6 +328,7 @@
 				C7FF2C8C29241B260020FF11 /* FirebaseFirestore */,
 				C7FF2C8E29241B260020FF11 /* FirebaseFirestoreSwift */,
 				C7FF2C9029241B260020FF11 /* FirebaseStorage */,
+				C73F45C4292B279200E37F4F /* Kingfisher */,
 			);
 			productName = Instagram_Clone;
 			productReference = C7FF2C71292418120020FF11 /* Instagram_Clone.app */;
@@ -625,6 +636,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C73F45C4292B279200E37F4F /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7FF2C9229241BDB0020FF11 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		C7FF2C8829241B260020FF11 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C7FF2C8729241B260020FF11 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
