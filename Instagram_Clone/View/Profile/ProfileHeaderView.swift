@@ -42,6 +42,7 @@ struct ProfileHeaderView: View {
                         })
                     }
                 }
+                .padding(.horizontal)
                 
                 Spacer()
                 
@@ -56,7 +57,7 @@ struct ProfileHeaderView: View {
             Text(viewModel.user.fullname ?? "")
                 .font(.system(size: 15, weight: .bold))
                 .padding([.leading, .top])
-                .padding(.leading, 24)
+                .padding(.leading, 8)
             
             HStack {
                 
