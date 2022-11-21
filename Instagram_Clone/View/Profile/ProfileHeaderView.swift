@@ -58,6 +58,16 @@ struct ProfileHeaderView: View {
                 .padding([.leading, .top])
                 .padding(.leading, 24)
             
+            HStack {
+                
+                Spacer()
+                
+                ProfileButtonView(viewModel: viewModel)
+                
+                Spacer()
+            }
+            .padding(.top)
+            
         }
     }
 }
