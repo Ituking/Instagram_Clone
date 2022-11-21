@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C73F45C2292A55B000E37F4F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73F45C1292A55B000E37F4F /* User.swift */; };
 		C73F45C5292B279200E37F4F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C73F45C4292B279200E37F4F /* Kingfisher */; };
+		C73F45C7292B39FB00E37F4F /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73F45C6292B39FB00E37F4F /* ProfileViewModel.swift */; };
 		C79B1A08292485BD006C228F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79B1A07292485BD006C228F /* ProfileView.swift */; };
 		C79B1A0A292485DD006C228F /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79B1A09292485DD006C228F /* NotificationsView.swift */; };
 		C79B1A0C29248697006C228F /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79B1A0B29248697006C228F /* SearchView.swift */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		C73F45C1292A55B000E37F4F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C73F45C6292B39FB00E37F4F /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		C79B1A07292485BD006C228F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		C79B1A09292485DD006C228F /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		C79B1A0B29248697006C228F /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 		C7EEAF932927DDA4005E60EF /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				C73F45C6292B39FB00E37F4F /* ProfileViewModel.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 				C73F45C2292A55B000E37F4F /* User.swift in Sources */,
 				C79B1A0C29248697006C228F /* SearchView.swift in Sources */,
 				C7EEAF842926695A005E60EF /* RegisterView.swift in Sources */,
+				C73F45C7292B39FB00E37F4F /* ProfileViewModel.swift in Sources */,
 				C79B1A10292486C0006C228F /* MainView.swift in Sources */,
 				C7FF2C77292418120020FF11 /* ContentView.swift in Sources */,
 				C79B1A08292485BD006C228F /* ProfileView.swift in Sources */,
