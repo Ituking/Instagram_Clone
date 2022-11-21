@@ -27,7 +27,7 @@ struct ProfileHeaderView: View {
                             .padding(.leading, 16)
                     } else {
                         Button {
-                            
+                            self.imagePickerRepresented.toggle()
                         } label: {
                             Image("profile-placeholder")
                                 .resizable()
@@ -60,8 +60,9 @@ struct ProfileHeaderView: View {
     }
 }
 
-struct ProfileHeaderView_Previews: PreviewProvider {
-    static var previews: some View {
-        ProfileHeaderView()
+extension ProfileHeaderView {
+    func loadImage() {
+        guard let selectedImage = selectedImage else { return }
+        userImage = Image(uiImage: selectedImage)
     }
 }
