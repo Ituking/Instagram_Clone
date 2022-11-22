@@ -48,10 +48,12 @@ struct UploadPostView: View {
                 .padding()
                 
                 Button {
-                    viewModel.uploadPost(image: image, caption: captionText)
-                    
-                    captionText = ""
-                    postImage = nil
+                    if let image = selectedImage {
+                        viewModel.uploadPost(image: image, caption: captionText)
+                        
+                        captionText = ""
+                        postImage = nil
+                    }
                 } label: {
                     Text("Share")
                         .font(.system(size: 16, weight: .semibold))
