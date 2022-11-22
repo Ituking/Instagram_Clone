@@ -32,6 +32,9 @@ struct ImageUploader {
                     print(err.localizedDescription)
                     return
                 }
+                
+                guard let imageURL = url?.absoluteString else { return }
+                completion(imageURL)
             }
         }
     }
