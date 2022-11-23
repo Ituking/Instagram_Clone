@@ -9,7 +9,8 @@ import SwiftUI
 import Firebase
 import FirebaseFirestoreSwift
 
-struct Post {
+struct Post: Identifiable, Decodable {
+    @DocumentID var id: String?
     let ownerUid: String
     let ownerUsername: String
     let caption: String
