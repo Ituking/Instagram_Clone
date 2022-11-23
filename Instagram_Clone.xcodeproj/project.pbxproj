@@ -27,6 +27,7 @@
 		C7BFBF0C292B91B800E0239C /* ProfileButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BFBF0B292B91B700E0239C /* ProfileButtonView.swift */; };
 		C7BFBF0E292B9A3300E0239C /* UploadPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BFBF0D292B9A3300E0239C /* UploadPostViewModel.swift */; };
 		C7BFBF10292C868E00E0239C /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BFBF0F292C868E00E0239C /* ImageUploader.swift */; };
+		C7BFBF12292E755A00E0239C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BFBF11292E755A00E0239C /* Post.swift */; };
 		C7EEAF7D29252407005E60EF /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EEAF7C29252407005E60EF /* TextArea.swift */; };
 		C7EEAF7F29252A44005E60EF /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EEAF7E29252A44005E60EF /* ProfileHeaderView.swift */; };
 		C7EEAF8129252C38005E60EF /* UserStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EEAF8029252C38005E60EF /* UserStats.swift */; };
@@ -68,6 +69,7 @@
 		C7BFBF0B292B91B700E0239C /* ProfileButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileButtonView.swift; sourceTree = "<group>"; };
 		C7BFBF0D292B9A3300E0239C /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
 		C7BFBF0F292C868E00E0239C /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
+		C7BFBF11292E755A00E0239C /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		C7EEAF7C29252407005E60EF /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
 		C7EEAF7E29252A44005E60EF /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		C7EEAF8029252C38005E60EF /* UserStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStats.swift; sourceTree = "<group>"; };
@@ -295,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				C73F45C1292A55B000E37F4F /* User.swift */,
+				C7BFBF11292E755A00E0239C /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 				C7BFBF10292C868E00E0239C /* ImageUploader.swift in Sources */,
 				C7BFBF0E292B9A3300E0239C /* UploadPostViewModel.swift in Sources */,
 				C79B1A182924B7FE006C228F /* PostGridView.swift in Sources */,
+				C7BFBF12292E755A00E0239C /* Post.swift in Sources */,
 				C7EEAF8129252C38005E60EF /* UserStats.swift in Sources */,
 				C7EEAF8629266982005E60EF /* SignInView.swift in Sources */,
 				C7EEAF7F29252A44005E60EF /* ProfileHeaderView.swift in Sources */,
