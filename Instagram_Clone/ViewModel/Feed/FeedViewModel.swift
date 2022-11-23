@@ -6,7 +6,18 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseFirestoreSwift
 
 class FeedViewModel: ObservableObject {
+    @Published var posts = [Post]()
     
+    func fetchPosts() {
+        Firestore.firestore().collection("posts").getDocuments { (snap, err) in
+            if let err = err {
+                print(err.localizedDescription)
+                return
+            }
+        }
+    }
 }
