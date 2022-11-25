@@ -16,6 +16,6 @@ struct Post: Identifiable, Decodable {
     let caption: String
     var likes: Int
     let imageURL: String
-//    let timestamp: TimeStamp
-    let ownerImageURL: String
+//    let timestamp: Timestamp
+    var ownerImageURL: String?
 }
